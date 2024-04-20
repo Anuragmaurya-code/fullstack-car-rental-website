@@ -1,0 +1,58 @@
+{
+  "sortedMiddleware": [
+    "/"
+  ],
+  "middleware": {
+    "/": {
+      "env": [
+        "NEXT_PUBLIC_CLERK_SIGN_IN_URL",
+        "NEXT_PUBLIC_CLERK_SIGN_UP_URL",
+        "CLERK_JS_VERSION",
+        "NEXT_PUBLIC_CLERK_JS_VERSION",
+        "NEXT_PUBLIC_CLERK_JS",
+        "CLERK_API_URL",
+        "CLERK_API_VERSION",
+        "CLERK_API_KEY",
+        "CLERK_SECRET_KEY",
+        "NEXT_PUBLIC_CLERK_FRONTEND_API",
+        "NEXT_PUBLIC_CLERK_DOMAIN",
+        "NEXT_PUBLIC_CLERK_PROXY_URL",
+        "NEXT_PUBLIC_CLERK_IS_SATELLITE",
+        "VERCEL",
+        "NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL",
+        "NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL",
+        "JEST_WORKER_ID"
+      ],
+      "files": [
+        "server/edge-runtime-webpack.js",
+        "server/middleware.js"
+      ],
+      "name": "middleware",
+      "page": "/",
+      "matchers": [
+        {
+          "regexp": "^/.*$",
+          "originalSource": "/:path*"
+        }
+      ],
+      "wasm": [
+        {
+          "name": "wasm_ef4866ecae192fd87727067cf2c0c0cf9fb8b020",
+          "filePath": "server/edge-chunks/wasm_ef4866ecae192fd87727067cf2c0c0cf9fb8b020.wasm"
+        },
+        {
+          "name": "wasm_a7e702bc5ba9227243abda7977c8096f59478d3f",
+          "filePath": "server/edge-chunks/wasm_a7e702bc5ba9227243abda7977c8096f59478d3f.wasm"
+        }
+      ],
+      "assets": [
+        {
+          "name": "noto-sans-v27-latin-regular.5dda3fca77107598.ttf",
+          "filePath": "server/edge-chunks/asset_noto-sans-v27-latin-regular.5dda3fca77107598.ttf"
+        }
+      ]
+    }
+  },
+  "functions": {},
+  "version": 2
+}
